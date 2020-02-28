@@ -1,0 +1,10 @@
+<button class= "btn btn-primary" (click) = " onClick()">Display Details</button>
+<p *ngIf = "showSecret"> secert password='luna</p>
+<div *ngFor = "let ts of noOfClick; let i= index" 
+[ngStyle]="{backgroundColor: i >=4 ? 'blue' : 'transparent'}" > {{ts}}</div>
+
+
+<!--[ngStyle]="{backgroundColor: ts >=5 ? 'blue' : 'transparent'}"-->
+
+<!-- Not working, Need to check
+[ngStyle]="{backgroundColor:getColor()}"-->
